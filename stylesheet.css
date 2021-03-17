@@ -1,8 +1,23 @@
-.bg-image {
-    max-width: 600px;
+body {
+    background-color: #ffe6e6;
 }
 
 .bingo-card {
     border-style: solid;
-    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(6, 150px);
+}
+
+.bingo-line {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.card-column {
+    background: #ff5e5e;
+}
+
+.card-bg {
+    object-fit: fill;
 }
