@@ -1,23 +1,90 @@
+* {
+    font-family: 'Great Vibes', cursive;
+    /* box-sizing: border-box; */
+}
+
+.nav-bar{
+    border: solid firebrick;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -0.75rem;
+    padding: .5em .25em;
+}
+
+a {
+    background-color: #B04A4A;
+    color: white;
+    padding: .25em .5em;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+    padding: 0 2em;
+} 
+
+.github-source, .contact, .prof-link {
+    font-size: 2em;
+}
+
+.link-menu {
+    list-style-type: none;    
+}
+
 body {
     background-color: #ffe6e6;
 }
 
 .bingo-card {
-    border-style: solid;
+    margin: 5em auto;
+    border: solid red;
     display: grid;
+    justify-content: space-around;
+    width: 65%;
     grid-template-columns: repeat(5, 150px);
     grid-template-rows: repeat(6, 150px);
+    background-image: url("https://thegraphicsfairy.com/wp-content/uploads/2020/01/Valentine-Vintage-Clown-Image-GraphicsFairy.jpg");
+    background-size: cover;
+    object-fit: fill;
 }
 
-.bingo-line {
-    grid-column-start: 1;
-    grid-column-end: 5;
+.column-letter {
+    color:  firebrick;
+    text-shadow: 2px 2px #432803;
+    align-content: center;
 }
 
 .card-column {
-    background: #ff5e5e;
+    font-size: 50px;
+    justify-items: center;
 }
 
-.card-bg {
+.cell {
+    border: dashed firebrick;
+    
+}
+
+.free-space {
+    background-image: url("https://banner2.cleanpng.com/20180623/zhh/kisspng-love-hearts-candy-eargasm-baby-love-5b2e35f3a86222.0315245115297551236897.jpg");
+    background-size: cover;
     object-fit: fill;
+}
+
+@media (min-width: 1025px) {
+
+	.nav-bar {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 1024px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .bingo-card {
+        width: 80%;
+    }
 }
