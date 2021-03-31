@@ -2,6 +2,8 @@
     font-family: 'Great Vibes', cursive;
 }
 
+/* The next five styles are the styles for my header and its contained elements, I used a flexbox to style the elements, media queries for screen sizes are found at the bottom of the stylesheet. */
+
 .nav-bar{
     border: solid firebrick;
     display: flex;
@@ -33,6 +35,9 @@ li {
 body {
     background-color: #ffe6e6;
 }
+
+/* I styled/built the bingo card itself with a CSS grid, used an nth child to remove the top row's border, and styled all of the internal divs. 
+There's also a flexbox within the grid itself.  */
 
 .bingo-card {
     margin: 5em auto;
@@ -80,14 +85,22 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     object-fit: fill;
+    align-items: center;
+    justify-content: center;
 }
 
-/* .dob {
+/* This is an unused style rule for now, I'll probably get to it later on in the project as I continue to work on it. 
+The style I was applying wasn't producing the outcome I wanted when rendered.
+
+ .dob {
     background: url('./images/heart-dobber.png');
     background-size: contain;
     background-repeat: no-repeat;
     object-fit: fill;
 } */
+
+/* These are the page's media queries, styled best for a small tablet, but could work for a phone turned landscape (although it wouldn't fit quite well in a phone viewport because of the length of the grid lol). 
+The header and its contained elements' styles change, as does the grid width on the page. */
 
 @media (min-width: 1025px) {
     a {
