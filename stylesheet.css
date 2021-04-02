@@ -45,7 +45,6 @@ There's also a flexbox within the grid itself.  */
     box-shadow: 10px 5px 5px #871313;
     display: grid;
     justify-content: space-around;
-    width: 65%;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(6, 150px);
     background:#C38989 url('./images/pierrot.jpeg');
@@ -111,6 +110,10 @@ The header and its contained elements' styles change, as does the grid width on 
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+    .bingo-card {
+        width: 65%;
+    }
     
 }
 
